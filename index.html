@@ -1,0 +1,87 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Let’s Speak Portuguese - Welcome</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #005580;
+      color: white;
+      text-align: center;
+    }
+    header {
+      padding: 60px 20px 30px;
+    }
+    h1 {
+      font-size: 40px;
+      margin-bottom: 10px;
+    }
+    h2 {
+      font-size: 20px;
+      font-weight: normal;
+      margin-top: 0;
+    }
+    .buttons {
+      margin: 40px 0;
+    }
+    .buttons button {
+      padding: 18px 40px;
+      margin: 10px;
+      font-size: 20px;
+      background-color: white;
+      color: #005580;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+    }
+    .theme-toggle {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      background-color: white;
+      color: #005580;
+      border: none;
+      padding: 8px 14px;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+    footer {
+      background-color: #003344;
+      color: white;
+      padding: 20px;
+      font-size: 14px;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+    }
+  </style>
+</head>
+<body>
+  <button class="theme-toggle" onclick="toggleTheme()">Theme</button>
+  <header>
+    <h1>Let’s Speak Portuguese 🌍</h1>
+    <h2>Seja bem-vindo!</h2>
+    <div class="buttons">
+      <button onclick="window.location.href='painel.html'">Login</button>
+      <button onclick="window.location.href='painel.html'">Sign Up</button>
+    </div>
+  </header>
+  <footer>
+    <p><strong>Professor:</strong> Lucas de Oliveira Zilse</p>
+    <p><strong>Birthdate:</strong> 24/03/2009 (16 years old)</p>
+    <p><strong>Phone:</strong> +55 (61) 99948-2565 | <strong>Email:</strong> lucas.ozilse@gmail.com</p>
+    <p><strong>From:</strong> Brazil | <strong>Teaches:</strong> Portuguese in English</p>
+    <p>Want to join our WhatsApp group? Message the professor directly!</p>
+  </footer>
+  <script>
+    function toggleTheme() {
+      const b = document.body;
+      b.style.backgroundColor = b.style.backgroundColor === 'white' ? '#005580' : 'white';
+      b.style.color = b.style.color === 'black' ? 'white' : 'black';
+    }
+  </script>
+</body>
+</html>

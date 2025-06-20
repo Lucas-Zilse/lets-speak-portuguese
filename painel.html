@@ -1,0 +1,74 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Painel do Aluno</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f0f0f0;
+      color: #222;
+    }
+    header {
+      background-color: #005580;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+    .content {
+      padding: 30px;
+    }
+    .lesson {
+      background: white;
+      padding: 20px;
+      margin-bottom: 15px;
+      border-left: 6px solid #0077aa;
+      border-radius: 6px;
+    }
+    .progress {
+      background-color: #ccc;
+      border-radius: 5px;
+      overflow: hidden;
+      margin-top: 30px;
+    }
+    .progress-bar {
+      background-color: #0077aa;
+      width: 60%;
+      height: 20px;
+    }
+    footer {
+      position: fixed;
+      bottom: 0;
+      background-color: #005580;
+      color: white;
+      width: 100%;
+      text-align: center;
+      padding: 10px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Bem-vindo, aluno!</h1>
+  </header>
+  <div class="content">
+    <div class="lesson">
+      <h3>Iniciante - Aula 1: Alfabeto e Pronúncia</h3>
+      <input type="checkbox" /> Marcar como concluída
+    </div>
+    <div class="lesson">
+      <h3>Iniciante - Aula 2: Números e Idades</h3>
+      <input type="checkbox" /> Marcar como concluída
+    </div>
+    <div class="progress">
+      <div class="progress-bar"></div>
+    </div>
+  </div>
+  <footer>
+    Progresso do curso: 60%
+  </footer>
+</body>
+</html>
